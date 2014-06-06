@@ -64,7 +64,7 @@ ActiveRecord::Schema.define(version: 20140425235458) do
   end
 
   add_index "repos", ["active"], name: "index_repos_on_active", using: :btree
-  add_index "repos", ["github_id"], name: "index_repos_on_github_id", unique: true, using: :btree
+  add_index "repos", ["github_id"], name: "index_repos_on_github_id", using: :btree
 
   create_table "users", force: true do |t|
     t.datetime "created_at",                       null: false

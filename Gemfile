@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-ruby '2.0.0'
+ruby '2.1.2'
 
 gem 'active_model_serializers'
 gem 'angularjs-rails'
@@ -18,7 +18,7 @@ gem 'newrelic_rpm'
 gem 'octokit'
 gem 'omniauth-github'
 gem 'pg'
-gem 'rails', '4.0.4'
+gem 'rails', '4.0.5'
 gem 'resque', '~> 1.22.0'
 gem 'resque-retry'
 gem 'resque-sentry'
@@ -33,7 +33,7 @@ group :staging, :production do
 end
 
 group :development, :test do
-  gem 'debugger'
+  gem 'byebug'
   gem 'foreman'
   gem 'konacha'
   gem 'poltergeist'
